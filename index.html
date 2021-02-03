@@ -8,12 +8,18 @@
   </head>
   <body>
     <nav id="navbar">
-      <header><img src="" alt="" class="python_logo"> <h1>Python</h1></header>
-      <a href="#Introduction" class="nav-link">Introduction</a>
-      <a href="#Who_is_it_for?" class="nav-link">Who is it for?</a>
-      <a href="#Features" class="nav-link">Features</a>
-      <a href="#Installing" class="nav-link">Installing</a>
-      <a href="#Learning" class="nav-link">Learning</a>
+      <header><img id="logo" src="https://newhorizons.com.sg/wp-content/uploads/2019/04/python.png" alt=""> <h1>Python Documentation</h1></header>
+      <a href="#Introduction" class="nav-link main-heading">Introduction</a>
+      <a href="#Who_is_it_for?" class="nav-link main-heading">Who is it for?</a>
+      <a href="#Features" class="nav-link main-heading">Features</a>
+      <a href="#Installing" class="nav-link main-heading">Installing</a>
+      <a href="#Learning" class="nav-link main-heading">Learning</a>
+      <!-- BASIC SYNTAX - MAIN HEADING -->
+      <a href="#First_Python_Program" class="nav-link main-heading">First Python Program</a>
+      <a href="#Identifiers_&_Keywords" class="nav-link main-heading">Identifiers & Keywords</a>
+      <a href="#Statement" class="nav-link main-heading">Statement</a>
+      <a href="#Lines_and_Indentation" class="nav-link main-heading">Lines and Indentation</a>
+      <a href="#Comments_in_Python" class="nav-link main-heading">Comments in Python</a>
     </nav>
     <main id="main-doc">
       <section id="Introduction" class="main-section">
@@ -43,7 +49,7 @@
         <li>Comes with a large standard library that supports many common programming tasks such as connecting to web servers, searching text with regular expressions, reading and modifying files.</li>
         <li>Python's interactive mode makes it easy to test short snippets of code. There's also a bundled development environment called IDLE.</li>
         <li>Can also be embedded into an application to provide a programmable interface.</li>
-        <li>Runs anywhere, including Mac OS X, Windows, Linux, and Unix, with unofficial builds also available for Android and iOS.</li>
+        <li>Runs anywhere, including <a href="https://www.python.org/downloads/mac-osx/" class="refer" target="_blank">Mac OS X</a>, <a href="https://www.python.org/downloads/windows/" class="refer" target="_blank">Windows</a>, <a href="https://docs.python.org/3/using/unix.html" class="refer" target="_blank">Linux</a>, and <a href="https://docs.python.org/3/using/unix.html" class="refer" target="_blank">Unix</a>, with unofficial builds also available for <a href="https://wiki.python.org/moin/Android" class="refer" target="_blank">Android</a> and iOS.</li>
 
         <p>Some programming-language features of Python are:</p>
         <li>A variety of basic data types are available: numbers (floating point, complex, and unlimited-length long integers), strings (both ASCII and Unicode), lists, and dictionaries.</li>
@@ -59,19 +65,154 @@
       </section>
       <section id="Installing" class="main-section">
         <header>Installing</header>
-        <p>Installing Python is generally easy, and nowadays many Linux and UNIX distributions include a recent Python. Even some Windows computers (notably those from HP) now come with Python already installed. If you do need to install Python and aren't confident about the task you can find a few notes on the <a class="refer" href="https://wiki.python.org/moin/BeginnersGuide/Download">BeginnersGuide/Download</a> wiki page, but installation is unremarkable on most platforms.</p>
-        <p>I'm a paragraph</p>
+        <p>Installing Python is generally easy, and nowadays many Linux and UNIX distributions include a recent Python. Even some Windows computers (notably those from HP) now come with Python already installed. If you do need to install Python and aren't confident about the task you can find a few notes on the <a class="refer" target="_blank" href="https://wiki.python.org/moin/BeginnersGuide/Download">BeginnersGuide/Download</a> wiki page, but installation is unremarkable on most platforms. You can also check on how to <a href="https://www.programiz.com/python-programming/first-program" class="refer" target="_blank">Install Python Separately</a> for further guidance.</p>
+        <p>Find more on the <a href="https://www.tutorialspoint.com/python3/python_environment.htm" class="refer" target="_blank">Environment Setup tutorial</a> by Tutorials Point. </p>
         <li>A list item</li>
         <code>let description = "I'm a Code snippet"</code>
       </section>
       <section id="Learning" class="main-section">
         <header>Learning</header>
-        <p>Before getting started, you may want to find out which <a class="refer" href="https://wiki.python.org/moin/IntegratedDevelopmentEnvironments">IDEs</a> and <a class="refer" href="https://wiki.python.org/moin/PythonEditors">text editors</a> are tailored to make Python editing easy, browse the list of <a class="refer" href="https://wiki.python.org/moin/IntroductoryBooks">introductory books</a>, or look at <a href="https://wiki.python.org/moin/BeginnersGuide/Examples" class="refer">code samples</a> that you might find helpful.</p>
-        <p>There is a list of tutorials suitable for experienced programmers on the <a href="https://wiki.python.org/moin/BeginnersGuide/Programmers" class="refer">BeginnersGuide/Tutorials</a> page.</p>
+        <p>Before getting started, you may want to find out which <a class="refer" target="_blank" href="https://wiki.python.org/moin/IntegratedDevelopmentEnvironments">IDEs</a> and <a class="refer" target="_blank" href="https://wiki.python.org/moin/PythonEditors">text editors</a> are tailored to make Python editing easy, browse the list of <a class="refer" target="_blank" href="https://wiki.python.org/moin/IntroductoryBooks">introductory books</a>, or look at <a href="https://wiki.python.org/moin/BeginnersGuide/Examples" class="refer" target="_blank">code samples</a> that you might find helpful.</p>
+        <p>There is a list of tutorials suitable for experienced programmers on the <a href="https://wiki.python.org/moin/BeginnersGuide/Programmers" class="refer" target="_blank">BeginnersGuide/Tutorials</a> page.</p>
+        <p>Most tutorials assume that you know how to run a program on your computer. If you are using Windows and need help with this, see <a href="https://docs.python.org/3/faq/windows.html#how-do-i-run-a-python-program-under-windows" class="refer" target="_blank">How do I Run a Program Under Windows</a>.</p>
         <li>A list item</li>
         <code>let description = "I'm a Code snippet"</code>
       </section>
-      
+
+      <!-- BASIC SYNTAX - MAIN HEADING -->
+
+      <section id="First_Python_Program" class="main-section">
+        <header>First Python Program</header>
+        <p>Now that we have Python up and running, we can write our first Python program.</p>
+        <p>Let's create a very simple program called <code>Hello World</code>. A <strong>"Hello, World!"</strong> is a simple program that outputs <code>Hello, World!</code> on the screen. Since it's a very simple program, it's often used to introduce a new programming language to beginners.</p>
+        <p>Type the following code in any text editor or an IDE and save it as <code>hello_world.py</code></p>
+        <code>print("Hello, world!")</code>
+        <p>Then, run the file. You will get the following output.</p>
+        <code>Hello, world!</code>
+        </section>
+        <section id="Identifiers_&_Keywords" class="main-section">
+          <header>Identifiers & Keywords</header>
+          <p>A Python identifier is a name used to identify a variable, function, class, module or other object. It can be of any length. An identifier starts with a letter A to Z or a to z or an underscore (_) followed by zero or more letters, underscores and digits (0 to 9). Names like <code>myClass</code>, <code>var_1</code> and <code>print_this_to_screen</code>, all are valid example.</p>
+          <p>An identifier cannot start with a digit. <code>1variable</code> is invalid, but <code>variable1</code> is a valid name</p>
+          <p>Python does not allow punctuation characters such as @, $, and % within identifiers. Python is a case sensitive programming language. Thus, <strong>Fruits</strong> and <strong>fruits</strong> are two different identifiers in Python.</p>
+          <p>Here are naming conventions for Python identifiers −</p>
+          <li>Class names start with an uppercase letter. All other identifiers start with a lowercase letter.</li>
+          <li>Starting an identifier with a single leading underscore indicates that the identifier is private.</li>
+          <li>Starting an identifier with two leading underscores indicates a strong private identifier.</li>
+          <li>If the identifier also ends with two trailing underscores, the identifier is a language-defined special name.</li>
+          <p>Keywords are the reserved words in Python. You cannot use them as constants or variables or  function names or any other identifier names. They are used to define the syntax and structure of the Python language.</p>
+          <p>In Python, keywords are case sensitive. All the keywords except <code>True</code>, <code>False</code> and <code>None</code> are in lowercase and they must be written as they are. The list of all the keywords is given below.</p>
+          <table>
+            <tbody>
+              <tr>
+                <td><code>False</code></td>
+                <td><code>await</code></td>
+                <td><code>else</code></td>
+                <td><code>import</code></td>
+                <td><code>pass</code></td>
+              </tr>
+              <tr>
+                <td><code>None</code></td>
+                <td><code>break</code></td>
+                <td><code>except</code></td>
+                <td><code>in</code></td>
+                <td><code>raise</code></td>
+              </tr>
+              <tr>
+                <td><code>True</code></td>
+                <td><code>class</code></td>
+                <td><code>finally</code></td>
+                <td><code>is</code></td>
+                <td><code>return</code></td>
+              </tr>
+              <tr>
+                <td><code>and</code></td>
+                <td><code>continue</code></td>
+                <td><code>for</code></td>
+                <td><code>lambda</code></td>
+                <td><code>try</code></td>
+              </tr>
+              <tr>
+                <td><code>as</code></td>
+                <td><code>def</code></td>
+                <td><code>from</code></td>
+                <td><code>nonlocal</code></td>
+                <td><code>while</code></td>
+              </tr>
+              <tr>
+                <td><code>assert</code></td>
+                <td><code>del</code></td>
+                <td><code>global</code></td>
+                <td><code>not</code></td>
+                <td><code>with</code></td>
+              </tr>
+              <tr>
+                <td><code>async</code></td>
+                <td><code>elif</code></td>
+                <td><code>if</code></td>
+                <td><code>or</code></td>
+                <td><code>yield</code></td>
+              </tr>
+            </tbody>
+          </table>
+          </section>
+          <section id="Statement" class="main-section">
+            <header>Statement</header>
+            <p>Instructions that a Python interpreter can execute are called statements. For example, <code>a = 1</code> is an assignment statement. <code>if</code> statement, <code>for</code> statement, <code>while</code> statement, etc. are other kinds of statements which will be discussed later.</p>
+            <p>In Python, the end of a statement is marked by a newline character. But we can make a statement extend over multiple lines with the line continuation character (<code>\</code>). For example:</p>
+<pre>
+a = 1 + 2 + 3 + \
+    4 + 5 + 6 + \
+    7 + 8 + 9
+</pre>
+            <p>This is an explicit line continuation. In Python, line continuation is implied inside parentheses <code>( )</code>, brackets <code>[ ]</code>, and braces <code>{ }</code>. For instance, we can implement the above multi-line statement as:</p>
+<pre>
+a = (1 + 2 + 3 +
+    4 + 5 + 6 +
+    7 + 8 + 9)
+</pre>
+            <p>Here, the surrounding parentheses <code>( )</code> do the line continuation implicitly. Same is the case with <code>[ ]</code> and <code>{ }</code>. </p>
+            <p>We can also put multiple statements in a single line using semicolons, as follows:</p>
+            <code>a = 1; b = 2; c = 3</code>
+          </section>
+          <section id="Lines_and_Indentation" class="main-section">
+            <header>Lines and Indentation</header>
+            <p>Python does not use braces(<code>{}</code>) to indicate blocks of code for class and function definitions or flow control. Blocks of code are denoted by line indentation, which is rigidly enforced.</p>
+            <p>The number of spaces in the indentation is variable, but all statements within the block must be indented the same amount. For example −</p>
+<pre>
+if True:
+    print ("True")
+else:
+    print ("False")
+</pre>
+<p>Indentation can be ignored in line continuation, but it's always a good idea to indent. It makes the code more readable. For example:</p>
+<pre>
+if True:
+    print('Hello')
+    a = 5
+</pre>
+<p>and</p>
+<code>if True: print('Hello'); a = 5</code>
+          </section>
+          <section id="Comments_in_Python" class="main-section">
+            <header>Comments in Python</header>
+            <p>Comments are very important while writing a program. They describe what is going on inside a program, so that a person looking at the source code does not have a hard time figuring it out.</p>
+            <p>You might forget the key details of the program you just wrote in a month's time. So taking the time to explain these concepts in the form of comments is always fruitful.</p>
+            <p>A hash sign (<code>#</code>) that is not inside a string literal is the beginning of a comment. All characters after the <code>#</code>, up to the end of the physical line, are part of the comment and the Python interpreter ignores them.</p>
+<pre>
+# First comment
+print ("Hello, Python!") # second comment
+</pre>
+            <p>This produces the following result −</p>
+            <code>Hello, Python!</code>
+            <p>Python does not have multiple-line commenting feature. You have to comment each line individually as follows −</p>
+<pre>
+# This is a comment.
+# This is a comment, too.
+# This is a comment, too.
+# I said that already.
+</pre>
+          </section>
     </main>
 </body>
 </html>
