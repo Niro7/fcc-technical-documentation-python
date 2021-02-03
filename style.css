@@ -5,33 +5,75 @@ body {
   margin: 0;
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 10px;
+  grid-gap: 50px;
   grid-template-areas: "aside"
   "content";
 }
+p > code{
+  font-size: 16px;
+}
 h1{
   color: #292F33;
+  padding: 0 5px;
 }
-h2{
+.main-section header{
+  font-size: 22px;
   color: #3776ab;
+}
+.nav-link:hover{
+  background-color: #e6e6e6;
+}
+.nav-link:active{
+  background-color: #d3d3d3;
+}
+a.nav-link:nth-child(2){
+  border-top: 1px solid;
+
+}
+a.nav-link{
+  text-decoration: none;
+  padding: 10px;
+  border-color: #333;
+  border-bottom: 1px solid;
+}
+a:-webkit-any-link {
+  color: #555;
+}
+#logo{
+  border-radius: 50%;
+  height: 25px;
 }
 #navbar {
   display: flex;
   flex-direction: column;
   grid-area: aside;
-  background: #888;
+  background: #f8f8f8;
+  padding: 10px;
+}
+#navbar header{
+  display: flex;
+  align-items: center;
 }
 #main-doc {
   grid-area: content;
 }
 @media(min-width:768px){
     body{
-        grid-template-columns: 1fr 3fr;    
+        grid-template-columns: 1fr 3fr;
         grid-template-areas: "aside content";
+    }
+    h1{
+      font-size: 14px;
+    }
+    #logo{
+      height: 20px;
     }
     #navbar{
         position: fixed;
         width: 25%;
         height: 100%;
+    }
+    #navbar a{
+      font-size: 14px;
     }
 }
